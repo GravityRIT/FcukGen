@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 
-var secure = require('express-force-https');
+const secure = require('express-force-https');
 app.use(secure);
 
 app.use(express.json());
