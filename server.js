@@ -1,8 +1,11 @@
 const express = require("express");
 const app = express();
 
+var secure = require('express-force-https');
+app.use(secure);
+
 app.use(express.json());
-app.set("port", process.env.PORT || 3001);
+app.set("port", process.env.PORT || 3002);
 app.use(express.static("static"));
 
 app.get("/gen/:doc",(req,res)=>{

@@ -16,6 +16,7 @@
   "license": "WTFPL",
   "dependencies": {
     "express": "^4.16.3",
+    "express-force-https": "^1.0.0",
     "pos": "^0.4.2"
   }
 }
