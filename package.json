@@ -1,0 +1,21 @@
+{
+  "name": "fk-generator",
+  "version": "1.0.0",
+  "description": "To fucking expand a fucking article using fucking fuckards",
+  "main": "server.js",
+  "scripts": {
+    "run": "node server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "fuck",
+    "fucking"
+  ],
+  "author": "hadeeb",
+  "license": "WTFPL",
+  "dependencies": {
+    "express": "^4.16.3",
+    "pos": "^0.4.2"
+  }
+}
