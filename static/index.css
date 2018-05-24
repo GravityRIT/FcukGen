@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+body{
+	background-color: #2a2a2a;
+	/*background-image: url('img/bg.jpg');*/
+    background-position: center; 
+	color: silver;
+}
+.form-control{
+	margin: 20px; 
+	width: 300px;
+}
+.content{
+	padding-top: 12%;
+}
 .input-area > *,.output-area > * {
     display: block;
 }
