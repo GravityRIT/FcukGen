@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+var path = require('path');
 
 const secure = require('express-force-https');
 app.use(secure);
@@ -14,7 +15,9 @@ app.get("/gen/:doc",(req,res)=>{
     res.setHeader('Content-Type', 'application/json');
     res.send(JSON.stringify({ result: result }));
 });
-
+app.get("/*",(req,res)=>{
+    res.sendFile(path.join(__dirname + '/static/404.html'));
+});
 app.listen(app.get("port"), () => {
     console.log(`Find the server at: http://localhost:${app.get("port")}/`);
 });
